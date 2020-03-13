@@ -1,0 +1,38 @@
+.box {
+  background-color: #7f8c8d;
+  line-height: 70px;
+  width: 280px;
+  height: 80px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  padding-top: auto;
+  border-radius: 50px 50px;
+  margin-bottom: 50px;
+  border: black;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.box:hover {
+  background-color: #95a5a6;
+  box-shadow: 4px 4px 5px #c8c8c8;
+  transition: background-color 0.5s ease-in-out;
+}
+.img {
+  background-image: url(notitle.png);
+  background-repeat: no-repeat;
+  width: 182px;
+  height: 181px;
+}
+.img:hover {
+  animation: 1.5s imgMove ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes imgMove {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(0.375turn) scale(0.75, 0.75);
+    border: 5px ridge black;
+  }
+}
